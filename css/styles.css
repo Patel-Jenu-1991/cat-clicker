@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Frijole|Peralta|Ubuntu+Mono');
+@import url('https://fonts.googleapis.com/css?family=Frijole|Peralta|Ubuntu+Mono|Concert+One');
 
 *,
 *:after,
@@ -36,23 +36,33 @@ body {
   font-weight: bold;
 }
 
+.cat-container {
+  float: left;
+  margin-left: 1.5em;
+}
+
+.cat-name {
+  font-family: 'Concert One', monospace, sans-serif, serif;
+  font-size: 2.5em;
+  text-align: center;
+}
+
 .click-area {
   border: 0.2em ridge rgb(69, 112, 221);
   border-radius: 5em;
   box-shadow: 1em 1em 3em rgb(223, 213, 164);
   height: 50%;
   margin: 0 auto;
-  width: 50%;
-  padding: 4%;
+  width: 55%;
+  padding: 1em 0 2em 2em;
 }
 
-.click-area .xuca {
+.click-area .cat {
+  border: 1px solid rgb(0, 0, 0);
   display: block;
   cursor: pointer;
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-  height: 75%;
+  height: 350px;
+  width: 450px;
 }
 
 .shadow {
