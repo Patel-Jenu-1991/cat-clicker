@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Frijole|Peralta|Ubuntu+Mono');
+
 *,
 *:after,
 *:before: {
@@ -13,7 +15,46 @@ body {
   height: 100%;
 }
 
-header h1 {
+.doc-title .app-name {
+  font-family: 'Frijole', sans-serif, serif;
   font-size: 4em;
   text-align: center;
+}
+
+#click-counter {
+  border: 0.15em groove rgb(200, 97, 231);
+  border-radius: 1em;
+  font-family: 'Peralta', sans-serif, serif;
+  font-size: 2.5em;
+  padding: 0.35em;
+  letter-spacing: 0.1em;
+}
+
+#clicks {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.click-area {
+  border: 0.2em ridge rgb(69, 112, 221);
+  border-radius: 5em;
+  box-shadow: 1em 1em 3em rgb(223, 213, 164);
+  height: 50%;
+  margin: 0 auto;
+  width: 50%;
+  padding: 4%;
+}
+
+.click-area .xuca {
+  display: block;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  height: 75%;
+}
+
+.shadow {
+  text-shadow: 0.05em 0.04em rgb(98, 96, 105);
 }
