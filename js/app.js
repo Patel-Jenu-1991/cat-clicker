@@ -1,16 +1,28 @@
 'use strict';
 
 // select DOM elements to work with
-const {cat, clicks} = {
-  cat: document.querySelector('.xuca'),
-  clicks: document.querySelector('#clicks')
+const {clickArea, clicks, catNames} = {
+  clickArea: document.querySelector('.click-area'),
+  clicks: document.querySelector('#clicks'),
+  catNames: document.querySelectorAll('.cat-name')
 };
 
-// initialize counter
-let counter = 0;
+// line up cats, initialize counter
+let cats = ['Xuca', 'Chewie'], counter = 0;
 
-cat.addEventListener('click', (event) => {
-  counter++; // increment counter
-  clicks.textContent = ''; // empty click counter
-  clicks.textContent = String(counter); // update click counter
+// name the cats
+for (var i = 0; i < cats.length; i++) {
+  catNames[i].textContent = cats[i];
+  catNames[i].textContent = cats[i];
+}
+
+clickArea.addEventListener('click', (event) => {
+  let target = event.target.nodeName;
+  if (target === 'IMG') {
+    counter++; // increment counter
+    clicks.textContent = ''; // empty click counter
+    clicks.textContent = String(counter); // update click counter
+  } else {
+    return;
+  }
 }, false);
