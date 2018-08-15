@@ -11,7 +11,7 @@ const {clickArea, clicks, catNames} = {
 let cats = ['Xuca', 'Chewie'], counter = 0;
 
 // name the cats
-for (var i = 0; i < cats.length; i++) {
+for (let i = 0; i < cats.length; i++) {
   catNames[i].textContent = cats[i];
 }
 
