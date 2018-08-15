@@ -13,7 +13,6 @@ let cats = ['Xuca', 'Chewie'], counter = 0;
 // name the cats
 for (var i = 0; i < cats.length; i++) {
   catNames[i].textContent = cats[i];
-  catNames[i].textContent = cats[i];
 }
 
 clickArea.addEventListener('click', (event) => {
