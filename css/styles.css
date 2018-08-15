@@ -30,7 +30,7 @@ body {
   letter-spacing: 0.1em;
 }
 
-#clicks {
+.clicks {
   font-family: 'Ubuntu Mono', monospace;
   font-size: 1.25em;
   font-weight: bold;
